@@ -22,7 +22,7 @@ const sortTickets = (tickets, criterion) => {
     if (criterion === 'priority') {
         return tickets.sort((a, b) => b.priority - a.priority); // Descending by priority
     } else if (criterion === 'title') {
-        return tickets.sort((a, b) => b.title.localeCompare(a.title)); // Ascending by title
+        return tickets.sort((a, b) => a.title.localeCompare(b.title)); // Ascending by title
     }
     return tickets;
 };
